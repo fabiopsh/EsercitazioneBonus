@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserHomePage">
+
+
+    <Button
+        android:id="@+id/buttonLogOut"
+        android:layout_width="113dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="539dp"
+        android:layout_marginEnd="159dp"
+        android:backgroundTint="#4CAF50"
+        android:text="LogOut"
+        android:textColor="#FFFFFF"
+        app:iconTint="#FFEB3B"
+        app:iconTintMode="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656"
+        app:rippleColor="#FFC107"
+        app:strokeColor="#FFEB3B"
+        tools:ignore="TextContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="466dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="vertical"
+        android:id="@+id/princialLayoutVert"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.822">
+
+
+        <TextView
+            android:id="@+id/userDataText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Dati dell'utente"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="28sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/usernameShower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8sp"
+            android:text="Username: "
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/passwordShower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password: "
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/cittaShower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Città: "
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/dataNascitaShower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data di Nascita: "
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <Button
+            android:id="@+id/buttonModificaPass"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:text="Mod. Password"
+            android:textColor="#FFFFFF"
+            app:iconTint="#FFEB3B"
+            app:iconTintMode="add"
+            app:rippleColor="#FFC107"
+            app:strokeColor="#FFEB3B"
+            tools:ignore="TextContrastCheck"
+            android:layout_gravity="center"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/benvenutoText"
+        android:layout_width="91dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="29dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Benvenuto"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/princialLayoutVert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.708"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/homePageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="sans-serif-black"
+        android:text="HOMEPAGE"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/benvenutoText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/adminBedge"
+        android:layout_width="53dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="46dp"
+        android:background="#FFC107"
+        android:backgroundTint="#FFC107"
+        android:fontFamily="sans-serif-medium"
+        android:text="Admin"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/princialLayoutVert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/benvenutoText"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
