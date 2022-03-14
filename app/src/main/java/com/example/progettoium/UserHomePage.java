@@ -67,9 +67,11 @@ public class UserHomePage extends AppCompatActivity {
         username.setText("Username: " + utenteLoggato.getUsername());
         password.setText("Password: " + utenteLoggato.getPassword());
         cittaNascita.setText("Città di Nascita: " + utenteLoggato.getCittaProvenienza());
-        Date date = utenteLoggato.dataDiNascita;
-        DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy", Locale.ITALIAN);
-        dataNascita.setText(dateFormat.format(date));
+        if(utenteLoggato.getUsername()!="admin") {
+            Date date = utenteLoggato.dataDiNascita;
+            DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy", Locale.ITALIAN);
+            dataNascita.setText(dateFormat.format(date));
+        }
 
 
         benvenutoText.setText("Benvenuto " + utenteLoggato.getUsername() + "!");
