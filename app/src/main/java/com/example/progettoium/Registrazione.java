@@ -49,6 +49,7 @@ public class Registrazione extends AppCompatActivity {
 
         utente = new Utenti();
 
+
         /**
             Apro la schermata con il picker della data
          */
