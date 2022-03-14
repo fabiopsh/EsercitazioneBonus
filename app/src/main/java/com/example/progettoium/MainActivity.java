@@ -27,26 +27,16 @@ public class MainActivity extends AppCompatActivity {
     String user,pass;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
+        //Eseguo questo IF per verificare che l'utente non sia stato già creato
         if(!isAdminCreated) {
             aggiungiAdmin();
-            popolaUtenti();
-        }
-        //Debug
-        for(int i = 0; i < utentiRegistrati.size(); i++) {
-            //Debug
-            //System.out.println(utentiRegistrati.get(i).getDataDiNascita().toString());
+            //popolaUtenti();
         }
 
         username = findViewById(R.id.userLogin);
@@ -86,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
      * Funzione che aggiunge degli admin
      */
     public void aggiungiAdmin(){
-        Utenti adminUtenteBase = new Utenti("admin", "65773", null, null, true);
+        Utenti adminUtenteBase = new Utenti("admin", "admin", null, null, true);
         utentiRegistrati.add(adminUtenteBase);
         isAdminCreated = true;
     }

@@ -76,7 +76,7 @@ public class UserHomePage extends AppCompatActivity {
 
         benvenutoText.setText("Benvenuto " + utenteLoggato.getUsername() + "!");
 
-        if(utenteLoggato.isAdmin){
+        if(utenteLoggato.isAdmin && utenteLoggato.getUsername().equals("admin")){
             cittaNascita.setVisibility(View.GONE);
             dataNascita.setVisibility(View.GONE);
         }

@@ -10,5 +10,20 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listaUtenti"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="642dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/backHomepageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Homepage" />
+
+    </RelativeLayout>
+
+
+
 </LinearLayout>

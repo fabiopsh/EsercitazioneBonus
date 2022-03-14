@@ -52,6 +52,14 @@ public class ModPasswordUtente extends AppCompatActivity {
                 }
             }
         });
+
+        homePage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ModPasswordUtente.this, UserHomePage.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public boolean checkPassword(){
